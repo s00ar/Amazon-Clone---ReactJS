@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --header__background: #131921;
+  --header__accent: #cd9042;
+  --header__color: #fff;
+  --header__toggle: #cd9042;
+  --body__background:  rgb(234, 237, 237);
+  --product__background: #fff;
+  --product__title: #111;
+}
+
+:root .dark {
+  /* --header__background: #fff; */
+  /* --header__accent: #cd9042; */
+  --header__color: #ece7e1e5; 
+  --header__toggle: #ac9e8de5;
+  --body__background: #1e2733e3;
+  --product__background: #0a0a0a;
+  --product__title: #fff;
+}
+
+body {
+  background-color: var(--body__background);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--product__title);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+*:any-link {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

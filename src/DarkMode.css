@@ -1,0 +1,29 @@
+/* 1 */
+:root {
+--font-color: #333;
+--background-color: #eee;
+--link-color: cornflowerblue;
+}
+
+/* 2 */
+[data-theme="dark"] {
+--font-color: rgb(255, 255, 255);
+--background-color: #333;
+--link-color: lightblue;
+}
+
+/* 3 */
+body {
+background-color: var(--background-color);
+color: var(--font-color);
+}
+
+a {
+color: var(--link-color);
+}
+
+.toggle-theme-wrapper {
+align-items: right;
+margin-right: 0%;
+padding-left: 70%;
+}

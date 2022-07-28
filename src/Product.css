@@ -1,0 +1,80 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  width: 70%;
+  min-width: 100px;
+  background: rgb(255, 255, 255, .7);
+  background-blend-mode: lighten;
+  z-index: 1;
+  padding-top: 1rem;
+}
+
+.product__rating {
+  display: flex;
+  margin-bottom: 5px;
+  z-index: 10;
+}
+
+.product > img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+  z-index: 5;
+}
+
+.product > button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin: 10px 0;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}
+/* Fué muy frustrante no lograr que los botones fueran iguales esteticamente porque el hecho de meterlo alrededor de un link por algún motivo me negaba el css así que le armé una clase propia. Se que no es lo mejor pero me daba en el toc que quedara */
+.product__mybutton {
+  background: #f0c14b;
+  border: 1px solid;
+  margin: 10px 0;
+  padding: 0.5em;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}
+
+.product__price {
+  margin-top: 5px;
+}
+
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product__title {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--product__title);
+}
+
+.product__title:any-link {
+  text-decoration: none;
+}
+
+.product__title:hover {
+  color: #846a29;
+}
+
+.product__prop {
+  padding: 0.5em;
+  margin: 1.5rem;
+}
+.product__info{
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+
+}

@@ -1,0 +1,16 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: var(--header__background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin-right: 0;
+  margin-top: 18px;
+}
